@@ -12,10 +12,9 @@
 </head>
 <body>
     <div id="app">
-        <h1>Creating a vue.js app <br> Studio Ghibli Films API</h1>
+        <h1>Creating a Vue.js app <br> Studio Ghibli Films API</h1>
         <form>
             <input type="text" name="searchQuery" v-model="searchQuery" placeholder="Search by title or description..."/>
-            <!--<input type="submit" value="Submit"/>-->
         </form>
         <film-block :style="filmStyle"
             v-for="film in filteredFilms"
