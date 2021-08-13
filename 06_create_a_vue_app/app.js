@@ -1,18 +1,6 @@
-/* global Vue */
-/* global fetch */
-
-// TASKS
-// create an app instance that iterates over the films API
-// create a component that renders a <div> for each film
-// style the components
-// create a search bar that filters out the films using a <form> element
-
-    
 import FilmBlock from './components/film-block.js';
 
-// fetch the data from the films API
 const url = 'https://ghibliapi.herokuapp.com/films';
-
 
 const app = Vue.createApp({
     components: {
@@ -49,5 +37,3 @@ const app = Vue.createApp({
 });
 
 app.mount('#app');
-
-// struggled with the searchbox - didn't include toLowerCase(), so my code was not working when parsing the titles

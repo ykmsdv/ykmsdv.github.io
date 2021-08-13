@@ -24,11 +24,11 @@ input {
     height: 20px;
     background-color: #f5f1e6;
     border: 1px solid #556a5b;
-    /*box-shadow: 0 1px 1px -1px #556a5b;*/
     cursor: pointer;
     font-family: Arial, sans-serif;
     color: #556a5b;
     font-size: 10pt;
     padding: 3px;
     margin-bottom: 10px;
+    border-radius: 5px;
 }

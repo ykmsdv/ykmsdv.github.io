@@ -7,7 +7,7 @@ const FilmBlock = Vue.defineComponent({
         <div>
             <span class="title">{{ $props.title }}</span><br>
             <span class="director">{{ $props.director }}</span>
-            <span class="year">{{ $props.release_date }}</span>
+            <span class="year">&nbsp;{{ $props.release_date }}</span>
             <p class="description">{{ $props.description }}</p>
         </div>
     `
