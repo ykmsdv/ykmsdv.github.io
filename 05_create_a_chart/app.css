@@ -1,0 +1,21 @@
+body {
+    background: #f5f1e6;
+    color: #556a5b;
+    font-family: 'Oswald', sans-serif;
+}
+
+#wrap {
+    margin: 0 auto;
+    width: 600px;
+    padding-bottom: 40px;
+}
+
+
+.y-axis text {
+    font-size: 12pt;
+}
+
+.x-axis text {
+    font-size: 10pt;
+    color: black;
+}

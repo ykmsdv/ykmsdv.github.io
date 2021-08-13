@@ -1,0 +1,74 @@
+body {
+	background-color: #313131;
+	color: #f7fcfd;
+}
+
+a {
+	color: #76a09c;
+}
+a:hover {
+	color: #f5e855;
+}
+
+p {
+	font-family: 'Crimson Text', serif;
+	font-size: 20px;
+}
+
+header {
+	text-align: center;
+	margin: 50px 0;
+}
+
+main {
+	margin: 50px;
+}
+
+h1 {
+	font-family: Ariel, sans-serif;
+}
+
+h2 {
+	font-family: Ariel, sans-serif;
+	margin: 30px 0 0 50px;
+}
+
+section {
+	float: left;
+}
+
+section div {
+	float: left;
+}
+
+figure {
+	float: left;
+}
+
+img {
+	max-width: 600px;
+}
+
+figcaption {
+	word-break: break-all;
+	color: #999;
+}
+
+footer {
+	float: left;
+	width: 100%;
+	background-color: #222;
+	padding: 10px 0;
+}
+
+
+#copy {
+	float: left;
+	margin-left: 10px;
+	color: #f7fcfd;
+}
+
+#msdv {
+	float: right;
+	margin-right: 20px;
+}
