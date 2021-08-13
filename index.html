@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 7 - Yoana K</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <div id="main">
+        <h1>Publish your work to GitHub <br> A collection of all assignments</h1>
+        <ul>
+            <li><a href="02_about_me/index.html">Assignment 2 - About me</a></li>
+            <li><a href="03_js_functions/index.html">Assignment 3 - JavaScript functions</a></li>
+            <li><a href="04_creating_html_from_data_source/index.html">Assignment 4 - Create HTML from a data source</a></li>
+            <li><a href="05_create_a_chart/index.html">Assignment 5 - Create a d3.js chart</a></li>
+            <li><a href="06_create_a_vue_app/index.html">Assignment 6 - Create a Vue.js app</a></li>
+        </ul>
+    </div>
+    
+    <footer>
+        <span id="copy">&copy; Copyright <span id="year"></span>. All Rights Reserved</span>
+		<span id="msdv"><a href="https://parsons.nyc/">Yoana Kosturska MSDV </a></span>
+    </footer>
+
+    <script type="text/javascript">
+        const date = new Date().getFullYear();
+        document.getElementById("year").innerHTML = date;
+    </script>
+</body>
+</html>
