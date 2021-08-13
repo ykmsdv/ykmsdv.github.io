@@ -1,0 +1,39 @@
+body {
+    background: #f5f1e6;
+    color: #556a5b;
+    font-family: 'Oswald', sans-serif;
+}
+
+#wrap {
+    margin: 0 auto;
+    width: 600px;
+    padding-bottom: 40px;
+}
+
+li {
+    border-bottom: 1px solid #999;
+    margin-top: 10px;
+}
+
+li p {
+    font-family: Arial, sans-serif;
+    font-size: 10pt;
+}
+
+.title {
+    font-weight: 600;
+}
+
+.button {
+    background: #e8e2d0;
+    border-radius: 5px;
+    border: 1px solid #999;
+}
+
+#prev {
+    float: left;
+}
+
+#next {
+    float: right;
+}
