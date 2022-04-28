@@ -20,7 +20,7 @@
         Approval Ratings of President Biden for 2021 (in %)
       </v-card-subtitle>
       <h5 class="text-subtitle-2 text-center mt-0 pt-0" style="color: #999">
-        Standard Deviation of Monthly Polling Data
+        Minimum, Maximum, and Average of Monthly Polling Data
       </h5>      
 
       <v-row align="center" justify="center">
@@ -28,7 +28,7 @@
             class="mt-12 mr-6"
             dark
               v-model="checkbox"
-              label="Show Polls Distribution"
+              label="Show All Polls"
               color="white"
               :value="false"
               hide-details
@@ -39,7 +39,7 @@
             class="mt-12"
             dark
               v-model="checkboxSample"
-              label="Scale Polls by Sample Size"
+              label="Size Polls by Number of Participants"
               color="white"
               :value="true"
               hide-details
@@ -47,14 +47,16 @@
       </v-row>
       <div id="viz"></div>
     </v-card>
-    <v-card class="mt-2 elevation-0" color="#222">
-      <v-card-title class="text-subtitle-1" style="color: #999">Legend</v-card-title>
-      <v-card-text>
-      </v-card-text>
+    <v-card class="elevation-0" color="#222">
+      <v-row class="mb-12 ml-8">
+        <div style="height: 80px; width: 400px;">
+        <v-img
+          src="legend.png"
+        ></v-img>
+        </div>
+      </v-row>
     </v-card>
-
   </v-container>
-    
 </template>
 
 <script>
@@ -196,7 +198,7 @@ import * as d3 from 'd3';
           .append("text")
           .attr('x', d => this.xScale(d['month_name']))
           .attr('y', d => this.yScale(d['max'] + 0.7))
-          .attr('dx', d => 0)
+          .attr('dx', d => -3)
           .text(d => `max: ${d.max}`)           
           .style('font-size', '8pt')
           .attr('fill', '#999')
@@ -209,7 +211,7 @@ import * as d3 from 'd3';
           .append("text")
           .attr('x', d => this.xScale(d['month_name']))
           .attr('y', d => this.yScale(d['min'] - 1.5))
-          .attr('dx', d => 0)
+          .attr('dx', d => -2)
           .text(d => `min: ${d.min}`) 
           .style('font-size', '8pt')
           .attr('fill', '#999')
