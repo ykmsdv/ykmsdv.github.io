@@ -28,7 +28,7 @@
 
           <v-row align="center" justify="center">
             <v-checkbox
-              class="mt-12 mr-6"
+              class="mt-7 mr-6"
               dark
               v-model="checkbox"
               label="Show All Polls"
@@ -39,7 +39,7 @@
 
             <v-checkbox
               v-if="checkbox"
-              class="mt-12"
+              class="mt-7"
               dark
               v-model="checkboxSample"
               label="Size Polls by Number of Participants"
@@ -49,10 +49,10 @@
             ></v-checkbox>
           </v-row>
 
-          <div id="viz"></div>
+          <div id="viz" class="mt-6"></div>
         </v-card>
         <v-card class="elevation-0" color="#222">
-          <v-row class="ml-6 mt-8">
+          <v-row class="ml-0 mt-1">
             <v-col cols="12">
               <v-img 
               :src="legendToDisplay"
@@ -102,11 +102,11 @@ export default {
     },
     legendToDisplay() {
       if (this.checkbox && this.checkboxSample) {
-        return "size.png";
+        return "size.svg";
       } else if (this.checkbox && !this.checkboxSample) {
-        return "color.png";
+        return "color.svg";
       } else {
-        return "min_max.png";
+        return "min_max.svg";
       }
     }
   },
